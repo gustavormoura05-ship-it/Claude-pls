@@ -1,0 +1,571 @@
+{
+  "series": "apocalipse-cristo",
+  "episode": {
+    "number": 1,
+    "label": "EP. 1"
+  },
+  "scene": "cristo",
+  "seed": 2026,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "duration": 67,
+  "title": {
+    "kicker": "E SE...",
+    "text": "um *apocalipse zumbi* começasse e você estivesse no *Cristo Redentor*?",
+    "short": "Apocalipse zumbi no Cristo",
+    "duration": 3.0,
+    "camera": {
+      "to": {
+        "pos": [
+          0,
+          27.9
+        ],
+        "yaw": 177,
+        "pitch": -12
+      },
+      "ease": "out",
+      "shake": 0.12
+    }
+  },
+  "camera": {
+    "start": {
+      "pos": [
+        0,
+        25.5
+      ],
+      "yaw": 181,
+      "pitch": -6,
+      "fov": 72
+    }
+  },
+  "counter": {
+    "label": "Infectados no Rio",
+    "format": "number",
+    "curve": "exp",
+    "showAt": 10.4,
+    "pulseFrom": 34,
+    "keys": [
+      [
+        0,
+        0
+      ],
+      [
+        10.4,
+        0
+      ],
+      [
+        10.6,
+        12
+      ],
+      [
+        18,
+        800
+      ],
+      [
+        26,
+        24000
+      ],
+      [
+        34,
+        180000
+      ],
+      [
+        42,
+        640000
+      ],
+      [
+        50,
+        1300000
+      ],
+      [
+        61.5,
+        2400000
+      ],
+      [
+        67,
+        2700000
+      ]
+    ]
+  },
+  "captions": [
+    {
+      "start": 3.0,
+      "end": 6.6,
+      "text": "Você está aos pés do *Cristo Redentor*, 710 metros acima do Rio.",
+      "camera": {
+        "to": {
+          "pos": [
+            -0.5,
+            28.2
+          ],
+          "yaw": 166,
+          "pitch": -17
+        },
+        "shake": 0.12
+      }
+    },
+    {
+      "start": 6.6,
+      "end": 10.2,
+      "text": "17h40. O *pôr do sol* mais bonito do mundo.",
+      "camera": {
+        "to": {
+          "pos": [
+            -2,
+            28.2
+          ],
+          "yaw": 136,
+          "pitch": -1,
+          "fov": 64
+        },
+        "shake": 0.1
+      }
+    },
+    {
+      "start": 10.2,
+      "end": 14.0,
+      "text": "Até que as *sirenes* começam lá embaixo.",
+      "camera": {
+        "to": {
+          "pos": [
+            -1,
+            28.35
+          ],
+          "yaw": 172,
+          "pitch": -22,
+          "fov": 70
+        },
+        "ease": "out",
+        "shake": 0.2
+      }
+    },
+    {
+      "start": 14.0,
+      "end": 18.0,
+      "text": "Fumaça em Copacabana. Depois no Centro. Depois em *todo lugar*.",
+      "camera": {
+        "to": {
+          "pos": [
+            0,
+            28.35
+          ],
+          "yaw": 196,
+          "pitch": -14
+        },
+        "ease": "inOut",
+        "shake": 0.25
+      }
+    },
+    {
+      "start": 18.0,
+      "end": 22.0,
+      "text": "Seu celular vibra: *“NÃO SAIA DE CASA. ELES MORDEM.”*",
+      "y": 560,
+      "camera": {
+        "to": {
+          "pos": [
+            0,
+            28.2
+          ],
+          "yaw": 186,
+          "pitch": -12
+        },
+        "duration": 0.8,
+        "ease": "out",
+        "shake": 0.2
+      }
+    },
+    {
+      "start": 22.0,
+      "end": 26.0,
+      "text": "Mas você não está em casa. Você está *no topo de uma montanha*.",
+      "camera": {
+        "to": {
+          "pos": [
+            0,
+            21
+          ],
+          "yaw": 0,
+          "pitch": 24,
+          "fov": 74
+        },
+        "duration": 2.2,
+        "ease": "inOut",
+        "shake": 0.2
+      }
+    },
+    {
+      "start": 26.0,
+      "end": 30.0,
+      "text": "E aqui em cima só se chega por um caminho: *a escadaria*.",
+      "camera": {
+        "to": {
+          "pos": [
+            8,
+            12
+          ],
+          "yaw": -78,
+          "pitch": -12,
+          "fov": 70
+        },
+        "ease": "inOut",
+        "shake": 0.2
+      }
+    },
+    {
+      "start": 30.0,
+      "end": 34.0,
+      "text": "O último trem acabou de chegar. Alguém lá dentro *foi mordido*.",
+      "camera": {
+        "to": {
+          "pos": [
+            12,
+            9.5
+          ],
+          "yaw": -86,
+          "pitch": -17
+        },
+        "ease": "out",
+        "shake": 0.3
+      }
+    },
+    {
+      "start": 34.0,
+      "end": 38.0,
+      "text": "Os *gritos* começam lá embaixo.",
+      "camera": {
+        "to": {
+          "pos": [
+            14.5,
+            8
+          ],
+          "yaw": -92,
+          "pitch": -22,
+          "fov": 64
+        },
+        "duration": 1.2,
+        "ease": "out",
+        "shake": 0.55
+      }
+    },
+    {
+      "start": 38.0,
+      "end": 42.0,
+      "text": "Os seguranças trancam o portão. *1.800 pessoas* presas aqui em cima.",
+      "camera": {
+        "to": {
+          "pos": [
+            9,
+            12
+          ],
+          "yaw": 38,
+          "pitch": -3,
+          "fov": 72
+        },
+        "duration": 1.6,
+        "ease": "inOut",
+        "shake": 0.45
+      }
+    },
+    {
+      "start": 42.0,
+      "end": 46.0,
+      "text": "E eles sobem. Degrau por degrau. *Sem parar.*",
+      "camera": {
+        "to": {
+          "pos": [
+            12.5,
+            7.6
+          ],
+          "yaw": -90,
+          "pitch": -12,
+          "fov": 68
+        },
+        "duration": 1.6,
+        "ease": "inOut",
+        "shake": 0.5
+      }
+    },
+    {
+      "start": 46.0,
+      "end": 50.0,
+      "text": "O portão começa a *ceder*.",
+      "camera": {
+        "to": {
+          "pos": [
+            9.5,
+            7.6
+          ],
+          "yaw": -90,
+          "pitch": -4,
+          "fov": 72
+        },
+        "ease": "out",
+        "shake": 1.1
+      }
+    },
+    {
+      "start": 50.0,
+      "end": 53.5,
+      "text": "Você tem uns *2 minutos*. Pensa rápido.",
+      "camera": {
+        "to": {
+          "pos": [
+            6,
+            11
+          ],
+          "yaw": 22,
+          "pitch": 36,
+          "fov": 78
+        },
+        "duration": 1.4,
+        "ease": "inOut",
+        "shake": 0.6
+      }
+    },
+    {
+      "start": 53.5,
+      "end": 57.5,
+      "text": "*Opção A:* a porta de manutenção do Cristo. Uma escada interna sobe até os braços.",
+      "camera": {
+        "to": {
+          "pos": [
+            2.8,
+            9.2
+          ],
+          "yaw": 2,
+          "pitch": 9,
+          "fov": 66
+        },
+        "ease": "inOut",
+        "shake": 0.35
+      }
+    },
+    {
+      "start": 57.5,
+      "end": 61.5,
+      "text": "*Opção B:* pular a grade e descer pela *Floresta da Tijuca*, no escuro.",
+      "camera": {
+        "to": {
+          "pos": [
+            -16.2,
+            16
+          ],
+          "yaw": 98,
+          "pitch": -38,
+          "fov": 72
+        },
+        "duration": 2.0,
+        "ease": "inOut",
+        "shake": 0.35
+      }
+    },
+    {
+      "start": 61.5,
+      "end": 67.0,
+      "text": "A ou B? *Comenta aí!*",
+      "camera": {
+        "to": {
+          "pos": [
+            -12,
+            20
+          ],
+          "yaw": 160,
+          "pitch": -6,
+          "fov": 70
+        },
+        "ease": "linear",
+        "shake": 0.2
+      }
+    }
+  ],
+  "choice": {
+    "start": 61.5,
+    "ask": "O QUE VOCÊ FAZ?",
+    "a": "Entrar no Cristo e subir até os braços",
+    "b": "Pular a grade e fugir pela floresta",
+    "cta": "COMENTE A OU B",
+    "sub": "A mais votada decide o EPISÓDIO 2"
+  },
+  "events": [
+    {
+      "t": 10.4,
+      "id": "sirenes"
+    },
+    {
+      "t": 14.0,
+      "id": "incendios"
+    },
+    {
+      "t": 18.1,
+      "id": "celular_on"
+    },
+    {
+      "t": 21.7,
+      "id": "celular_off"
+    },
+    {
+      "t": 30.0,
+      "id": "trem"
+    },
+    {
+      "t": 30.0,
+      "id": "zumbis_escada"
+    },
+    {
+      "t": 36.5,
+      "id": "panico"
+    },
+    {
+      "t": 38.8,
+      "id": "portao_trancado"
+    },
+    {
+      "t": 46.0,
+      "id": "portao_cede"
+    },
+    {
+      "t": 50.0,
+      "id": "apagao"
+    }
+  ],
+  "effects": [
+    {
+      "t": 34.1,
+      "type": "flash",
+      "dur": 0.35,
+      "strength": 0.5
+    },
+    {
+      "t": 46.0,
+      "type": "flash",
+      "dur": 0.3,
+      "strength": 0.45
+    }
+  ],
+  "sounds": [
+    {
+      "t": 0.0,
+      "sfx": "vento",
+      "vol": 0.55
+    },
+    {
+      "t": 0.0,
+      "sfx": "trilha",
+      "vol": 0.9
+    },
+    {
+      "t": 0.0,
+      "sfx": "impacto",
+      "vol": 0.85
+    },
+    {
+      "t": 2.7,
+      "sfx": "whoosh",
+      "vol": 0.5
+    },
+    {
+      "t": 10.4,
+      "sfx": "sirene",
+      "vol": 0.6
+    },
+    {
+      "t": 15.5,
+      "sfx": "sirene",
+      "vol": 0.4
+    },
+    {
+      "t": 18.2,
+      "sfx": "vibra",
+      "vol": 0.9
+    },
+    {
+      "t": 21.9,
+      "sfx": "whoosh",
+      "vol": 0.5
+    },
+    {
+      "t": 23.0,
+      "sfx": "sirene",
+      "vol": 0.3
+    },
+    {
+      "t": 29.0,
+      "sfx": "trem",
+      "vol": 0.7
+    },
+    {
+      "t": 31.5,
+      "sfx": "grunhido",
+      "vol": 0.8
+    },
+    {
+      "t": 34.1,
+      "sfx": "grito",
+      "vol": 0.75
+    },
+    {
+      "t": 35.8,
+      "sfx": "grito",
+      "vol": 0.5
+    },
+    {
+      "t": 36.5,
+      "sfx": "multidao",
+      "vol": 0.6
+    },
+    {
+      "t": 38.8,
+      "sfx": "portao",
+      "vol": 0.8,
+      "dur": 1.4
+    },
+    {
+      "t": 41.0,
+      "sfx": "grunhido",
+      "vol": 0.9
+    },
+    {
+      "t": 43.6,
+      "sfx": "grunhido",
+      "vol": 1.0
+    },
+    {
+      "t": 46.0,
+      "sfx": "portao",
+      "vol": 1.0
+    },
+    {
+      "t": 48.6,
+      "sfx": "portao",
+      "vol": 1.0
+    },
+    {
+      "t": 50.0,
+      "sfx": "coracao",
+      "vol": 1.0
+    },
+    {
+      "t": 53.0,
+      "sfx": "tensao",
+      "vol": 0.8
+    },
+    {
+      "t": 61.3,
+      "sfx": "whoosh",
+      "vol": 0.6
+    },
+    {
+      "t": 61.5,
+      "sfx": "impacto",
+      "vol": 1.0
+    }
+  ],
+  "post": {
+    "canal": "@esefossevoceai",
+    "titulo": "E se um apocalipse zumbi começasse e você estivesse no Cristo Redentor? (Parte 1)",
+    "descricao": "Parte 1 🧟 Você está no topo do Cristo quando tudo começa… A ou B? O mais votado vira a Parte 2! #ApocalipseNoCristo #apocalipsezumbi #oquevocêfaria #pov #riodejaneiro",
+    "comentario_fixado": "🗳️ VOTAÇÃO DA PARTE 2 — responda com A ou B:\nA) Entrar no Cristo e subir até os braços\nB) Pular a grade e fugir pela floresta\nA mais votada em 48 h vira o próximo episódio!"
+  }
+}

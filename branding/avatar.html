@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face { font-family: "Anton"; src: url("/node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 900; src: url("/node_modules/@fontsource/montserrat/files/montserrat-latin-900-normal.woff2") format("woff2"); }
+html,body{margin:0;background:#000}
+.av{width:1080px;height:1080px;position:relative;overflow:hidden;display:none}
+.on{display:block}
+/* 1: tipografia */
+#v1{background:radial-gradient(circle at 50% 45%,#2a2a2a 0%,#0b0b0b 62%,#000 100%)}
+#v1 .t{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:Anton;font-size:390px;line-height:1;color:#ffd400;letter-spacing:6px;
+  -webkit-text-stroke:14px #000;paint-order:stroke fill;text-shadow:0 18px 0 #b30f15,0 0 80px rgba(255,212,0,.25);padding-bottom:30px}
+/* 2: olho */
+#v2{background:radial-gradient(circle at 50% 50%,#3a0608 0%,#120203 60%,#000 100%)}
+#v2 svg{position:absolute;inset:0}
+/* 3: Cristo 3D */
+#v3{background:#000 center/cover no-repeat}
+#v3 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.75) 100%)}
+#v3 .t{position:absolute;left:0;right:0;bottom:120px;text-align:center;font-family:Anton;font-size:260px;line-height:1;color:#ffd400;
+  -webkit-text-stroke:10px #000;paint-order:stroke fill;text-shadow:0 10px 30px rgba(0,0,0,.9)}
+</style></head><body>
+<div class="av" id="v1"><div class="t">E SE?</div></div>
+<div class="av" id="v2">
+  <svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="iris" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fff3a0"/><stop offset=".55" stop-color="#ffd400"/><stop offset="1" stop-color="#c98a00"/></radialGradient>
+      <radialGradient id="sclera" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#ffffff"/><stop offset=".8" stop-color="#e9e2d6"/><stop offset="1" stop-color="#c9b9a8"/></radialGradient>
+      <clipPath id="lid"><path d="M40 540 Q540 70 1040 540 Q540 1010 40 540 Z"/></clipPath>
+    </defs>
+    <path d="M40 540 Q540 70 1040 540 Q540 1010 40 540 Z" fill="url(#sclera)"/>
+    <g clip-path="url(#lid)">
+      <path d="M200 470 Q300 520 380 500 M720 600 Q800 570 900 610 M180 600 Q260 590 330 620" stroke="#c4262c" stroke-width="7" fill="none" opacity=".55"/>
+      <circle cx="540" cy="540" r="290" fill="url(#iris)"/>
+      <circle cx="540" cy="540" r="290" fill="none" stroke="#000" stroke-width="16"/>
+      <circle cx="540" cy="540" r="185" fill="#000"/>
+    </g>
+    <path d="M40 540 Q540 70 1040 540 Q540 1010 40 540 Z" fill="none" stroke="#000" stroke-width="22"/>
+    <text x="540" y="545" text-anchor="middle" dominant-baseline="central" font-family="Anton" font-size="320" fill="#ffd400">?</text>
+    <circle cx="440" cy="420" r="40" fill="#fff" opacity=".85"/>
+  </svg>
+</div>
+<div class="av" id="v3"><div class="shade"></div><div class="t">E SE?</div></div>
+<script>
+window.show = (id, bg) => { document.querySelectorAll('.av').forEach(e => e.classList.toggle('on', e.id === id)); if (bg) document.getElementById('v3').style.backgroundImage = `url(${bg})`; };
+</script>
+</body></html>

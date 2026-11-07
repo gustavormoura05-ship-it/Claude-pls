@@ -1,0 +1,17 @@
+{
+  "name": "e-se-shorts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Shorts 3D 'E Se...' em primeira pessoa: Three.js + Playwright + ffmpeg",
+  "scripts": {
+    "sfx": "node engine/sfx.mjs",
+    "render": "node engine/render.mjs",
+    "test-render": "node engine/render.mjs videos/ep01-cristo/script.json --start 0 --duration 4 --out out/teste-4s.mp4"
+  },
+  "dependencies": {
+    "@fontsource/anton": "5.3.0",
+    "@fontsource/montserrat": "5.3.0",
+    "three": "0.187.0"
+  }
+}

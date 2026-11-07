@@ -1,0 +1,5 @@
+node_modules/
+out/
+frames/
+assets/sfx/
+*.log

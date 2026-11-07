@@ -1,0 +1,53 @@
+@font-face { font-family: "Anton"; font-weight: 400; src: url("/node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 800; src: url("/node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 900; src: url("/node_modules/@fontsource/montserrat/files/montserrat-latin-900-normal.woff2") format("woff2"); }
+
+html, body { margin: 0; padding: 0; background: #000; overflow: hidden; }
+#stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #000; font-family: "Montserrat", sans-serif; }
+#gl { position: absolute; inset: 0; width: 1080px; height: 1920px; display: block; }
+#vignette { position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 75% 60% at 50% 48%, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 100%); }
+#flash { position: absolute; inset: 0; opacity: 0; background: #ff2a2a; mix-blend-mode: screen; }
+
+/* Cartão de título (pergunta completa) */
+#titlecard { position: absolute; left: 70px; right: 70px; top: 330px; text-align: center; opacity: 0; }
+#titlecard .kicker { font-family: "Anton"; font-size: 150px; line-height: 1; color: #ffd400; letter-spacing: 4px;
+  text-shadow: 0 6px 0 #000, 0 0 40px rgba(0,0,0,.8); }
+#titlecard .q { margin-top: 26px; font-weight: 900; font-size: 68px; line-height: 1.12; color: #fff; text-transform: uppercase;
+  -webkit-text-stroke: 3px #000; paint-order: stroke fill; text-shadow: 0 5px 18px rgba(0,0,0,.9); }
+
+/* Cabeçalho compacto (após o título) */
+#header { position: absolute; left: 60px; right: 60px; top: 150px; display: flex; align-items: center; gap: 18px; opacity: 0; }
+#header .ep { font-family: "Anton"; font-size: 40px; color: #000; background: #ffd400; padding: 6px 16px 4px; border-radius: 8px; white-space: nowrap; }
+#header .short { font-weight: 900; font-size: 38px; color: #fff; text-transform: uppercase; line-height: 1.1;
+  -webkit-text-stroke: 2px #000; paint-order: stroke fill; text-shadow: 0 3px 10px rgba(0,0,0,.9); }
+
+/* Contador */
+#counter { position: absolute; left: 60px; top: 250px; opacity: 0; }
+#counter .label { font-weight: 800; font-size: 28px; color: #fff; letter-spacing: 3px; text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0,0,0,.95); }
+#counter .value { font-family: "Anton"; font-size: 92px; line-height: 1.02; color: #ff3b30;
+  -webkit-text-stroke: 3px #000; paint-order: stroke fill; text-shadow: 0 4px 14px rgba(0,0,0,.8); font-variant-numeric: tabular-nums; }
+
+/* Legenda */
+#caption { position: absolute; left: 80px; right: 80px; top: 1180px; text-align: center; transform-origin: 50% 50%;
+  font-weight: 900; font-size: 66px; line-height: 1.16; color: #fff;
+  -webkit-text-stroke: 4px #000; paint-order: stroke fill; text-shadow: 0 6px 20px rgba(0,0,0,.95); opacity: 0; }
+#caption .hl, #titlecard .hl { color: #ffd400; }
+
+/* Cartão de escolha A/B */
+#choice { position: absolute; inset: 0; opacity: 0; background: rgba(0,0,0,.55); }
+#choice .ask { position: absolute; left: 60px; right: 60px; top: 380px; text-align: center; font-family: "Anton"; font-size: 120px;
+  color: #fff; -webkit-text-stroke: 4px #000; paint-order: stroke fill; }
+#choice .opt { position: absolute; left: 70px; right: 70px; height: 230px; border-radius: 28px; display: flex; align-items: center;
+  gap: 34px; padding: 0 40px; box-sizing: border-box; border: 6px solid #fff; box-shadow: 0 14px 40px rgba(0,0,0,.6); }
+#choice .opt.a { top: 600px; background: linear-gradient(135deg, #d71920, #8c0d12); }
+#choice .opt.b { top: 870px; background: linear-gradient(135deg, #1f8f3a, #0d5221); }
+#choice .letter { font-family: "Anton"; font-size: 150px; color: #fff; line-height: 1; width: 110px; text-align: center;
+  -webkit-text-stroke: 3px #000; paint-order: stroke fill; }
+#choice .txt { font-weight: 900; font-size: 50px; line-height: 1.12; color: #fff; text-transform: uppercase;
+  text-shadow: 0 3px 8px rgba(0,0,0,.6); }
+#choice .cta { position: absolute; left: 60px; right: 60px; top: 1150px; text-align: center; font-family: "Anton"; font-size: 96px;
+  color: #ffd400; -webkit-text-stroke: 4px #000; paint-order: stroke fill; }
+#choice .sub { position: absolute; left: 90px; right: 90px; top: 1275px; text-align: center; font-weight: 800; font-size: 44px;
+  color: #fff; line-height: 1.2; text-shadow: 0 3px 10px rgba(0,0,0,.9); }

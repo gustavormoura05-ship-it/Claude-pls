@@ -1,0 +1,30 @@
+{
+  "canal": "@esefossevoceai",
+  "bio": "Minisséries 3D onde VOCÊ é o personagem. Comenta A ou B e decide o próximo ep 👇",
+  "serie": "E Se... Apocalipse Zumbi no Cristo",
+  "pergunta": "E se um apocalipse zumbi começasse e você estivesse no Cristo Redentor?",
+  "regra": "Cada episódio termina com uma escolha A ou B. A opção mais votada nos comentários (48 h após a publicação) vira o próximo episódio.",
+  "episodios": [
+    {
+      "id": "ep01-cristo",
+      "script": "videos/ep01-cristo/script.json",
+      "status": "pronto",
+      "escolha": {
+        "A": {
+          "texto": "Entrar no Cristo e subir até os braços",
+          "proximo": "ep02a-dentro-do-cristo"
+        },
+        "B": {
+          "texto": "Pular a grade e fugir pela floresta",
+          "proximo": "ep02b-floresta-da-tijuca"
+        }
+      },
+      "votos": {
+        "A": null,
+        "B": null
+      },
+      "vencedora": null
+    }
+  ],
+  "hashtag_serie": "#ApocalipseNoCristo"
+}
